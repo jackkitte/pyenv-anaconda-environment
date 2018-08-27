@@ -32,6 +32,5 @@ RUN conda install -c conda-forge pygrib=2.0.2
 RUN conda install -c conda-forge jpeg
 
 # workディレクトリへzshでattach
-RUN mkdir /home/tamash/work
 WORKDIR /home/tamash/work
 ENTRYPOINT [ "/bin/zsh" ]
