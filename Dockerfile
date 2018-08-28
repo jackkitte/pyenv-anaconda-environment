@@ -26,6 +26,7 @@ ENV PATH $PYENV_ROOT/versions/anaconda3-$ANACONDA_VER/bin:$PATH
 RUN conda update -y conda
 RUN pip install --upgrade pip
 RUN pip install mecab-python3
+RUN pip install ptvsd==3.0.0
 RUN conda install -c conda-forge gensim
 RUN conda install -c conda-forge wordcloud
 RUN conda install -c conda-forge pygrib=2.0.2
